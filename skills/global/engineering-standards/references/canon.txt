@@ -1,0 +1,9 @@
+# label TAB regex; lint-skills.py fails when a regex no longer matches SKILL.md or references/*.md
+no else block	(?i)no `else` block
+guards as function clauses	(?i)second function clause with `when`
+dispatch maps	(?i)dispatch map
+one owner per fact	(?i)one owner per fact
+reuse before rebuilding	(?i)reuse before rebuilding
+no inline styles	(?i)0 inline `style`
+gates never muted	(?i)never muted
+letter of the law	Violating the letter of a law is violating the law

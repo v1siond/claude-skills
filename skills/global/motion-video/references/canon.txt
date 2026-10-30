@@ -1,0 +1,8 @@
+stills before the film	Stills before the film
+draft before the master	Draft at normal speed
+critic defaults to reject	[Dd]efault.{0,20}reject
+zero fabrication	Zero fabrication
+recorded use, not screenshots	shows the product being used
+public track by default	a public produced track is the default
+local fonts	Never a network font
+not touched at 9 or more	never touches a still that scored 9 or more

@@ -1,0 +1,10 @@
+director writes no feature code	No feature code
+builders never verify themselves	Builders never verify themselves
+nothing leaves without his yes	his yes
+players run the skill map	skill-map\.md
+critic checks the director	checks the director
+his words copied	His words are copied, never interpreted
+every ask joins the batch	Every ask of his joins the current batch
+QA in the browser makes BUILT	QA uses the real app in the browser
+every step leaves a file	Every step leaves a file
+letter of the law	Violating the letter of a law is violating the law

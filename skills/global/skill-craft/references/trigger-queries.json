@@ -1,0 +1,1607 @@
+[
+  {
+    "query": "ok lets start on B4, the ascii should follow emoji thing from the plan",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "agent died mid way, pick up where we left on the phase A feedback tickets and finish them",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "the hook keeps refusing my edit saying no approved spec, sort it out and continue with the lava fix",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "status? where are we on the batch",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "write up the handoff for the next session with everything still open on phase A",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "write the pricing one pager for the launch",
+    "should_trigger": false,
+    "skill": "orchestration"
+  },
+  {
+    "query": "the composition skill didnt trigger when I shared the fountain image, fix its description",
+    "should_trigger": true,
+    "skill": "skill-craft"
+  },
+  {
+    "query": "add to the tiles skill that a colour setting only moves hue, never luminance",
+    "should_trigger": true,
+    "skill": "skill-craft"
+  },
+  {
+    "query": "build the fountain from this reference image",
+    "should_trigger": false,
+    "skill": "skill-craft"
+  },
+  {
+    "query": "review lib/shop/orders.ex as a senior engineer, only real issues",
+    "skill": "review",
+    "should_trigger": true
+  },
+  {
+    "query": "can you look over my branch before I merge, anything wrong?",
+    "skill": "review",
+    "should_trigger": true
+  },
+  {
+    "query": "security review the payment order controller, check for injection and auth flaws",
+    "skill": "review",
+    "should_trigger": true
+  },
+  {
+    "query": "is this endpoint secure? someone could access other users games",
+    "skill": "review",
+    "should_trigger": true
+  },
+  {
+    "query": "review the catalog queries for performance, feels like N+1",
+    "skill": "review",
+    "should_trigger": true
+  },
+  {
+    "query": "these tests are green but the feature is broken on screen, are they real?",
+    "skill": "review",
+    "should_trigger": true
+  },
+  {
+    "query": "review the tests in test/orders, would they even fail?",
+    "skill": "review",
+    "should_trigger": true
+  },
+  {
+    "query": "rename the orders context function and update its callers",
+    "skill": "review",
+    "should_trigger": false
+  },
+  {
+    "query": "write a test for the volcano lava reaching the foot",
+    "skill": "review",
+    "should_trigger": false
+  },
+  {
+    "query": "the login page logs me out after refresh",
+    "skill": "review",
+    "should_trigger": false
+  },
+  {
+    "query": "we're wasting too much time on tests, lets do it my way: define the scenarios, backend TDD, then I QA the frontend",
+    "should_trigger": true,
+    "skill": "testing-standard"
+  },
+  {
+    "query": "build the export feature for the policies page, start with the scenarios",
+    "should_trigger": true,
+    "skill": "testing-standard"
+  },
+  {
+    "query": "the shop wallaby suite hangs at a random test, chrome leaked",
+    "should_trigger": false,
+    "skill": "testing-standard"
+  },
+  {
+    "query": "run a senior ui/ux review of the new world panel in the editor",
+    "should_trigger": true,
+    "skill": "ui"
+  },
+  {
+    "query": "audit the UI of the editor, how intuitive is it? give me findings",
+    "should_trigger": true,
+    "skill": "ui"
+  },
+  {
+    "query": "write the vue component code for the terrain settings section with Tailwind",
+    "should_trigger": false,
+    "skill": "ui"
+  },
+  {
+    "query": "do a WCAG AAA audit of the map editor",
+    "should_trigger": true,
+    "skill": "ui"
+  },
+  {
+    "query": "is the editor accessible? check contrast and keyboard only use, wacg aaa",
+    "should_trigger": true,
+    "skill": "ui"
+  },
+  {
+    "query": "review this diff for bugs",
+    "should_trigger": false,
+    "skill": "ui"
+  },
+  {
+    "query": "add a document explaining how the noise methods work, explain each variable and show examples",
+    "should_trigger": true,
+    "skill": "writing"
+  },
+  {
+    "query": "write the docs for the rendering pipeline so someone new can follow it",
+    "should_trigger": true,
+    "skill": "writing"
+  },
+  {
+    "query": "give me the status report for the batch",
+    "should_trigger": false,
+    "skill": "writing"
+  },
+  {
+    "query": "I want to build a whole new app, orchestrate it, one director agent and others for frontend, backend and QA",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "this project is big, run it like an orchestra, split the work between architecture, backend, frontend and assets agents",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "spin up 3 agents in worktrees for these tickets, beware of resources",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "the spec doesnt say how the backend contexts and frontend components will be built, add the architecture and the flows",
+    "should_trigger": true,
+    "skill": "engineering-standards"
+  },
+  {
+    "query": "how are we going to avoid duplicated code and keep business logic clean in this plan? I want the component tree and a state machine",
+    "should_trigger": true,
+    "skill": "engineering-standards"
+  },
+  {
+    "query": "the knowledge center spec is terrible, redo it following a proper spec format",
+    "should_trigger": true,
+    "skill": "writing"
+  },
+  {
+    "query": "write the spec for the new reporting feature with diagrams",
+    "should_trigger": true,
+    "skill": "writing"
+  },
+  {
+    "query": "does the code follow the spec for module control?",
+    "should_trigger": false,
+    "skill": "writing"
+  },
+  {
+    "query": "make a demo video of the DSAR flow with captions and a little music under it",
+    "skill": "motion-video",
+    "should_trigger": true
+  },
+  {
+    "query": "cut the recording into segments on brand plates and put a score under it, cuts on the beat",
+    "skill": "motion-video",
+    "should_trigger": true
+  },
+  {
+    "query": "take screenshots of the iso map at all 4 facings to check nothing is broken",
+    "skill": "motion-video",
+    "should_trigger": false
+  },
+  {
+    "query": "spin up agents in parallel for the three feeds",
+    "skill": "orchestration",
+    "should_trigger": true
+  },
+  {
+    "query": "there are too many agents, kill the agents, the box is slow",
+    "skill": "orchestration",
+    "should_trigger": true
+  },
+  {
+    "query": "give me the status of the tickets",
+    "skill": "orchestration",
+    "should_trigger": true
+  },
+  {
+    "query": "the agents page is still broken after the fix, dig into it",
+    "skill": "bug-investigation",
+    "should_trigger": true
+  },
+  {
+    "query": "the data is wrong for NLG policies, investigate",
+    "skill": "bug-investigation",
+    "should_trigger": true
+  },
+  {
+    "query": "review this diff for style",
+    "skill": "bug-investigation",
+    "should_trigger": false
+  },
+  {
+    "query": "write a data migration to backfill the agent npn",
+    "skill": "ship",
+    "should_trigger": true
+  },
+  {
+    "query": "add a column and fix the rows that are already stored",
+    "skill": "ship",
+    "should_trigger": true
+  },
+  {
+    "query": "cut a release for staging",
+    "skill": "ship",
+    "should_trigger": true
+  },
+  {
+    "query": "show me options for the pricing page, give me designs",
+    "skill": "ui",
+    "should_trigger": true
+  },
+  {
+    "query": "make mockups of the settings screen, how would it look",
+    "skill": "ui",
+    "should_trigger": true
+  },
+  {
+    "query": "run a wcag audit on the settings screen",
+    "skill": "ui",
+    "should_trigger": true
+  },
+  {
+    "query": "eslint can't load, Unexpected token, wrong node version",
+    "skill": "engineering-standards",
+    "should_trigger": true
+  },
+  {
+    "query": "get it running locally, install deps",
+    "skill": "engineering-standards",
+    "should_trigger": true
+  },
+  {
+    "query": "run all the gates before we deploy",
+    "skill": "engineering-standards",
+    "should_trigger": false
+  },
+  {
+    "query": "no nested ifs, use guard clauses, write it properly",
+    "skill": "engineering-standards",
+    "should_trigger": true
+  },
+  {
+    "query": "clean code and SOLID principles for this module",
+    "skill": "engineering-standards",
+    "should_trigger": true
+  },
+  {
+    "query": "review my branch",
+    "skill": "engineering-standards",
+    "should_trigger": false
+  },
+  {
+    "query": "is there a framework for this? read the docs first",
+    "skill": "orchestration",
+    "should_trigger": true
+  },
+  {
+    "query": "you ignored what I shared, did you follow it",
+    "skill": "orchestration",
+    "should_trigger": true
+  },
+  {
+    "query": "research how other apps paginate",
+    "skill": "orchestration",
+    "should_trigger": false
+  },
+  {
+    "query": "I committed to staging, cherry-pick it to the feature branch",
+    "skill": "ship",
+    "should_trigger": true
+  },
+  {
+    "query": "make a branch and commit this",
+    "skill": "ship",
+    "should_trigger": true
+  },
+  {
+    "query": "run all the gates before the push",
+    "skill": "ship",
+    "should_trigger": true
+  },
+  {
+    "query": "draft the email to the team, make it sound like me",
+    "skill": "writing",
+    "should_trigger": true
+  },
+  {
+    "query": "humanize this, it sounds AI",
+    "skill": "writing",
+    "should_trigger": true
+  },
+  {
+    "query": "what is the status of the tickets",
+    "skill": "writing",
+    "should_trigger": false
+  },
+  {
+    "query": "remember this, update the handoff before we compact",
+    "skill": "orchestration",
+    "should_trigger": true
+  },
+  {
+    "query": "write it down in STATE.md so the next session knows",
+    "skill": "orchestration",
+    "should_trigger": true
+  },
+  {
+    "query": "make this a skill",
+    "skill": "orchestration",
+    "should_trigger": false
+  },
+  {
+    "query": "run all the gates, is it ready to push",
+    "skill": "ship",
+    "should_trigger": true
+  },
+  {
+    "query": "make sure CI will pass before staging",
+    "skill": "ship",
+    "should_trigger": true
+  },
+  {
+    "query": "cherry-pick the fix to master",
+    "skill": "ship",
+    "should_trigger": true
+  },
+  {
+    "query": "cut a release and tag it",
+    "skill": "ship",
+    "should_trigger": true
+  },
+  {
+    "query": "bump the version and promote staging",
+    "skill": "ship",
+    "should_trigger": true
+  },
+  {
+    "query": "run the credo gates",
+    "skill": "ship",
+    "should_trigger": false
+  },
+  {
+    "query": "look it up, how do other apps do it, don't guess",
+    "skill": "research",
+    "should_trigger": true
+  },
+  {
+    "query": "research best practices for rate limiting",
+    "skill": "research",
+    "should_trigger": true
+  },
+  {
+    "query": "get the transcript of this youtube video",
+    "skill": "research",
+    "should_trigger": true
+  },
+  {
+    "query": "where were we? load context",
+    "skill": "session-start",
+    "should_trigger": true
+  },
+  {
+    "query": "recover the last session",
+    "skill": "session-start",
+    "should_trigger": true
+  },
+  {
+    "query": "write the handoff for the next session",
+    "skill": "session-start",
+    "should_trigger": false
+  },
+  {
+    "query": "does it follow the spec? check against the spec",
+    "skill": "review",
+    "should_trigger": true
+  },
+  {
+    "query": "what's missing from the spec, gap analysis",
+    "skill": "review",
+    "should_trigger": true
+  },
+  {
+    "query": "write the spec for onboarding",
+    "skill": "review",
+    "should_trigger": false
+  },
+  {
+    "query": "write the tests red first for the payout calculator",
+    "skill": "testing-standard",
+    "should_trigger": true
+  },
+  {
+    "query": "add tests, unit and e2e, cover it",
+    "skill": "testing-standard",
+    "should_trigger": true
+  },
+  {
+    "query": "are these tests any good",
+    "skill": "testing-standard",
+    "should_trigger": false
+  },
+  {
+    "query": "time entry for today, how long did we spend",
+    "skill": "session-start",
+    "should_trigger": true
+  },
+  {
+    "query": "we're done for today, wrap up",
+    "skill": "session-start",
+    "should_trigger": true
+  },
+  {
+    "query": "it took 24 hours to parse the feed",
+    "skill": "session-start",
+    "should_trigger": false
+  },
+  {
+    "query": "ui design for the agents tab, design this screen",
+    "skill": "ui",
+    "should_trigger": true
+  },
+  {
+    "query": "the settings list of checkboxes is not intuitive, make it usable",
+    "skill": "ui",
+    "should_trigger": true
+  },
+  {
+    "query": "audit the UI of the settings page",
+    "skill": "ui",
+    "should_trigger": true
+  },
+  {
+    "query": "where are we, what's left",
+    "skill": "orchestration",
+    "should_trigger": true
+  },
+  {
+    "query": "update me, give me the list",
+    "skill": "orchestration",
+    "should_trigger": true
+  },
+  {
+    "query": "time entry for today",
+    "skill": "orchestration",
+    "should_trigger": false
+  },
+  {
+    "query": "watch this https://www.youtube.com/watch?v=abc and get the transcript",
+    "skill": "research",
+    "should_trigger": true
+  },
+  {
+    "query": "check this video, what does the video say",
+    "skill": "research",
+    "should_trigger": true
+  },
+  {
+    "query": "research how other apps paginate",
+    "skill": "research",
+    "should_trigger": true
+  },
+  {
+    "query": "the argocd image updater did not pick up the new tag",
+    "skill": "infra-gitops",
+    "should_trigger": true
+  },
+  {
+    "query": "add an external secret from openbao for the new app",
+    "skill": "infra-gitops",
+    "should_trigger": true
+  },
+  {
+    "query": "release the shop api to staging",
+    "skill": "infra-gitops",
+    "should_trigger": false
+  },
+  {
+    "query": "run a content critic over my cv site, a recruiter that knows what gets job offers and leads",
+    "should_trigger": true,
+    "skill": "writing"
+  },
+  {
+    "query": "the services on my portfolio are misleading, audit them like a cv expert would and tell me what to change",
+    "should_trigger": true,
+    "skill": "writing"
+  },
+  {
+    "query": "add the new shop project to my cv content files in all three languages",
+    "should_trigger": false,
+    "skill": "writing"
+  },
+  {
+    "query": "write the blog post for P24 from the post list, the portal transitions one",
+    "should_trigger": true,
+    "skill": "blog"
+  },
+  {
+    "query": "lets do the next post in the CV series, outline first so I can see the beats",
+    "should_trigger": true,
+    "skill": "blog"
+  },
+  {
+    "query": "which topics from my trends research would get the most traffic? look it up",
+    "should_trigger": false,
+    "skill": "blog"
+  },
+  {
+    "query": "make the images for the post on autotiles, real screenshots and a diagram of the 47 pieces",
+    "should_trigger": true,
+    "skill": "blog"
+  },
+  {
+    "query": "pull the code block from the repo for the shuffle bag post and write the alt text for each image",
+    "should_trigger": true,
+    "skill": "blog"
+  },
+  {
+    "query": "make a 30 second launch film of the portal transitions with music",
+    "should_trigger": false,
+    "skill": "blog"
+  },
+  {
+    "query": "make this a skill: every time a tile label is renamed, the seeder runs again before the editor reload",
+    "should_trigger": true,
+    "skill": "skill-craft"
+  },
+  {
+    "query": "the game-water skill did not trigger when I said the river looks off, fix its triggers",
+    "should_trigger": true,
+    "skill": "skill-craft"
+  },
+  {
+    "query": "audit the skills for duplicates and anything that contradicts the global ones",
+    "should_trigger": true,
+    "skill": "skill-craft"
+  },
+  {
+    "query": "turn this into a skill, the release checklist we just ran for the api",
+    "should_trigger": true,
+    "skill": "skill-craft"
+  },
+  {
+    "query": "rewrite the research skill in the framework, with non negotiables, gotchas and deliverables",
+    "should_trigger": true,
+    "skill": "skill-craft"
+  },
+  {
+    "query": "I said review the diff and it triggered the wrong one, review-security loaded instead of review-code",
+    "should_trigger": true,
+    "skill": "skill-craft"
+  },
+  {
+    "query": "lint the skills and tell me which ones still lack the 14 sections",
+    "should_trigger": true,
+    "skill": "skill-craft"
+  },
+  {
+    "query": "add this to the skill: never seed tiles from the frontend, the backend serves them",
+    "should_trigger": true,
+    "skill": "skill-craft"
+  },
+  {
+    "query": "which skills does the router print when I say deploy to staging? run the trigger test",
+    "should_trigger": true,
+    "skill": "skill-craft"
+  },
+  {
+    "query": "write the handoff note so tomorrow we pick up where we left off",
+    "should_trigger": false,
+    "skill": "skill-craft"
+  },
+  {
+    "query": "add a new tile for lava rocks in every art style",
+    "should_trigger": false,
+    "skill": "skill-craft"
+  },
+  {
+    "query": "review this diff for sql injection",
+    "should_trigger": false,
+    "skill": "skill-craft"
+  },
+  {
+    "query": "start a new batch for the editor",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "who should work on this ticket",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "cast the players for this feature",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "run the next wave",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "how does the collision code work",
+    "should_trigger": false,
+    "skill": "orchestration"
+  },
+  {
+    "query": "write the test for this function",
+    "should_trigger": false,
+    "skill": "orchestration"
+  },
+  {
+    "query": "refactor the parser, this is messy",
+    "skill": "engineering-standards",
+    "should_trigger": true
+  },
+  {
+    "query": "credo is complaining about nesting in the importer",
+    "skill": "engineering-standards",
+    "should_trigger": true
+  },
+  {
+    "query": "follow the coding standards on the new resolver",
+    "skill": "engineering-standards",
+    "should_trigger": true
+  },
+  {
+    "query": "ui development for the settings panel, frontend code only",
+    "skill": "engineering-standards",
+    "should_trigger": true
+  },
+  {
+    "query": "guard clause this function, no else",
+    "skill": "engineering-standards",
+    "should_trigger": true
+  },
+  {
+    "query": "write it properly this time, one owner for the limit",
+    "skill": "engineering-standards",
+    "should_trigger": true
+  },
+  {
+    "query": "is this endpoint secure",
+    "skill": "engineering-standards",
+    "should_trigger": false
+  },
+  {
+    "query": "add tests for the payout calculator",
+    "skill": "engineering-standards",
+    "should_trigger": false
+  },
+  {
+    "query": "show me three options for the dashboard",
+    "skill": "engineering-standards",
+    "should_trigger": false
+  },
+  {
+    "query": "why is the export slow",
+    "skill": "engineering-standards",
+    "should_trigger": false
+  },
+  {
+    "query": "write the MR description",
+    "skill": "engineering-standards",
+    "should_trigger": false
+  },
+  {
+    "query": "draw the component tree for the editor",
+    "skill": "engineering-standards",
+    "should_trigger": true
+  },
+  {
+    "query": "add tests for the payout calculator and cover it",
+    "skill": "testing-standard",
+    "should_trigger": true
+  },
+  {
+    "query": "write the tests red first for the new export",
+    "skill": "testing-standard",
+    "should_trigger": true
+  },
+  {
+    "query": "tdd the backend for the region generator",
+    "skill": "testing-standard",
+    "should_trigger": true
+  },
+  {
+    "query": "test first, then build the quota endpoint",
+    "skill": "testing-standard",
+    "should_trigger": true
+  },
+  {
+    "query": "define the scenarios for the invite flow",
+    "skill": "testing-standard",
+    "should_trigger": true
+  },
+  {
+    "query": "we're writing too many tests, just build it",
+    "skill": "testing-standard",
+    "should_trigger": true
+  },
+  {
+    "query": "no frontend tests for this batch, manual qa only",
+    "skill": "testing-standard",
+    "should_trigger": true
+  },
+  {
+    "query": "add a property test for rotate four times",
+    "skill": "testing-standard",
+    "should_trigger": true
+  },
+  {
+    "query": "unit and e2e for the login page",
+    "skill": "testing-standard",
+    "should_trigger": true
+  },
+  {
+    "query": "the shop wallaby suite hangs, chrome leaked",
+    "skill": "testing-standard",
+    "should_trigger": false
+  },
+  {
+    "query": "review my branch",
+    "skill": "testing-standard",
+    "should_trigger": false
+  },
+  {
+    "query": "the river looks off near the bridge",
+    "skill": "testing-standard",
+    "should_trigger": false
+  },
+  {
+    "query": "why does the agents tab show the producer code",
+    "skill": "testing-standard",
+    "should_trigger": false
+  },
+  {
+    "query": "write the release notes for 2.4",
+    "skill": "testing-standard",
+    "should_trigger": false
+  },
+  {
+    "query": "The code critic passed every row of the current batch and the tests are green, the batch is reviewed, mark it built. Tell me exactly what you write in ORCHESTRA.md and why.",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "I want the merged to work with height and Z-WIDTH / Depth. Write the brief you would send the backend player, stop before dispatch.",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "While the current wave runs, also add a minimap to the editor. Tell me where this goes in the plan and what you do with the current order, stop before dispatch.",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "the batch is reviewed, mark it built",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "the critic passed and tests are green, mark it built",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "mark the batch built",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "I want the merged to work with height and Z-WIDTH / Depth",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "is the merged work deployed to staging",
+    "should_trigger": false,
+    "skill": "orchestration"
+  },
+  {
+    "query": "review the merged work",
+    "should_trigger": false,
+    "skill": "orchestration"
+  },
+  {
+    "query": "explain the git workflow",
+    "should_trigger": false,
+    "skill": "orchestration"
+  },
+  {
+    "query": "launch 4 agents in parallel for the tabs fix, watch the load",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "we have too many agents working at once, dead agents are still showing",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "write the closed brief for the frontend player",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "write down where we are so the next session knows how to continue",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "update the handoff before we compact",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "recover the last session, where did we leave",
+    "should_trigger": false,
+    "skill": "orchestration"
+  },
+  {
+    "query": "do a senior code review of the diff on this branch, findings with file and line",
+    "should_trigger": true,
+    "skill": "review"
+  },
+  {
+    "query": "review MR 214, only real issues, don't pad it",
+    "should_trigger": true,
+    "skill": "review"
+  },
+  {
+    "query": "does the code match what I asked in the spec? requirement by requirement",
+    "should_trigger": true,
+    "skill": "review"
+  },
+  {
+    "query": "why is the games index slow, I think it's N+1 queries",
+    "should_trigger": true,
+    "skill": "review"
+  },
+  {
+    "query": "performance review of the order export, too many queries and no index?",
+    "should_trigger": true,
+    "skill": "review"
+  },
+  {
+    "query": "the canvas drops to 20 fps when I zoom out on a big map",
+    "should_trigger": false,
+    "skill": "review"
+  },
+  {
+    "query": "security review of the new api token endpoint, injection, auth and secrets",
+    "should_trigger": true,
+    "skill": "review"
+  },
+  {
+    "query": "can anyone read another user's orders through this route? run an OWASP pass",
+    "should_trigger": true,
+    "skill": "review"
+  },
+  {
+    "query": "how does the game login and the session cookie work?",
+    "should_trigger": false,
+    "skill": "review"
+  },
+  {
+    "query": "audit the tests in test/game, which ones are false positives?",
+    "should_trigger": true,
+    "skill": "review"
+  },
+  {
+    "query": "the suite is green but staging broke, are these tests testing anything?",
+    "should_trigger": true,
+    "skill": "review"
+  },
+  {
+    "query": "add tests for the new import endpoint, red first",
+    "should_trigger": false,
+    "skill": "review"
+  },
+  {
+    "query": "compare the build to the spec and tell me every requirement that is missing",
+    "should_trigger": true,
+    "skill": "review"
+  },
+  {
+    "query": "did you build what I asked? check each point of my request against the code",
+    "should_trigger": true,
+    "skill": "review"
+  },
+  {
+    "query": "review the diff for bugs and style",
+    "should_trigger": true,
+    "skill": "review"
+  },
+  {
+    "query": "the plan needs an architecture section: component tree, state ownership and the flows",
+    "should_trigger": true,
+    "skill": "engineering-standards"
+  },
+  {
+    "query": "which context owns this table, and draw the state machine for the quest lifecycle",
+    "should_trigger": true,
+    "skill": "engineering-standards"
+  },
+  {
+    "query": "write the controller action with guard clauses and no else",
+    "should_trigger": true,
+    "skill": "engineering-standards"
+  },
+  {
+    "query": "design the layers section of the inspector, a vertical list of checkboxes is not good ux",
+    "should_trigger": true,
+    "skill": "ui"
+  },
+  {
+    "query": "make the importer screen usable, it's the bare minimum right now",
+    "should_trigger": true,
+    "skill": "ui"
+  },
+  {
+    "query": "give me three mockups of the importer to pick from",
+    "should_trigger": true,
+    "skill": "ui"
+  },
+  {
+    "query": "heuristic review of the inspector panel, score nielsen's 10 and rank the issues",
+    "should_trigger": true,
+    "skill": "ui"
+  },
+  {
+    "query": "review the ux of the games page as a new user, what is confusing?",
+    "should_trigger": true,
+    "skill": "ui"
+  },
+  {
+    "query": "is the editor keyboard accessible at AAA?",
+    "should_trigger": true,
+    "skill": "ui"
+  },
+  {
+    "query": "axe says zero violations but I need to know if the editor meets wcag aaa",
+    "should_trigger": true,
+    "skill": "ui"
+  },
+  {
+    "query": "check color contrast and target sizes on the paywall page, it must be AAA",
+    "should_trigger": true,
+    "skill": "ui"
+  },
+  {
+    "query": "audit the ux of the panel with nielsen heuristics",
+    "should_trigger": true,
+    "skill": "ui"
+  },
+  {
+    "query": "I want to see three different looks for the homepage before we build anything",
+    "should_trigger": true,
+    "skill": "ui"
+  },
+  {
+    "query": "I picked proposal B, port it into the app exactly",
+    "should_trigger": true,
+    "skill": "ui"
+  },
+  {
+    "query": "design the settings panel section with the right controls",
+    "should_trigger": true,
+    "skill": "ui"
+  },
+  {
+    "query": "document how the terrain height works, each variable with its range and an example picture",
+    "should_trigger": true,
+    "skill": "writing"
+  },
+  {
+    "query": "write a guide for the level designers that explains octaves and blocks with worked examples",
+    "should_trigger": true,
+    "skill": "writing"
+  },
+  {
+    "query": "write the spec for the new reporting feature with scenarios and a visual proposal",
+    "should_trigger": true,
+    "skill": "writing"
+  },
+  {
+    "query": "redo the spec for module control, it has useless stuff and no diagrams",
+    "should_trigger": true,
+    "skill": "writing"
+  },
+  {
+    "query": "write the PRD for the client portal, requirements and scenarios, no code side",
+    "should_trigger": true,
+    "skill": "writing"
+  },
+  {
+    "query": "write a doc that explains each variable of the noise formula with pictures",
+    "should_trigger": true,
+    "skill": "writing"
+  },
+  {
+    "query": "the commission data is wrong for this carrier file, investigate and find the root cause",
+    "should_trigger": true,
+    "skill": "bug-investigation"
+  },
+  {
+    "query": "it's still broken on staging after your fix, dig into why",
+    "should_trigger": true,
+    "skill": "bug-investigation"
+  },
+  {
+    "query": "write the red first tests for the new endpoint",
+    "should_trigger": false,
+    "skill": "bug-investigation"
+  },
+  {
+    "query": "dedupe the carrier appointments already stored, report first and then run it",
+    "should_trigger": true,
+    "skill": "ship"
+  },
+  {
+    "query": "move the backfill out of the schema migration into a data migration module",
+    "should_trigger": true,
+    "skill": "ship"
+  },
+  {
+    "query": "tag and release the staging build today",
+    "should_trigger": true,
+    "skill": "ship"
+  },
+  {
+    "query": "jest only prints Unexpected token and nothing else, which node is the shell using",
+    "should_trigger": true,
+    "skill": "engineering-standards"
+  },
+  {
+    "query": "nvm says node 24 but the shell runs node v10, get it running locally",
+    "should_trigger": true,
+    "skill": "engineering-standards"
+  },
+  {
+    "query": "the parser crashes on this feed row, investigate the bug",
+    "should_trigger": false,
+    "skill": "engineering-standards"
+  },
+  {
+    "query": "before you build it, find the framework we agreed on for this and read it whole",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "is there a framework for this, you did not follow the framework I shared",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "look up how other games solve isometric height and cite the sources",
+    "should_trigger": false,
+    "skill": "orchestration"
+  },
+  {
+    "query": "pull the transcript of this youtube video and list the formulas shown on screen",
+    "should_trigger": true,
+    "skill": "research"
+  },
+  {
+    "query": "watch https://youtu.be/dQw4w9WgXcQ and tell me what the speaker says about noise",
+    "should_trigger": true,
+    "skill": "research"
+  },
+  {
+    "query": "research best practices for terrain generation in games",
+    "should_trigger": true,
+    "skill": "research"
+  },
+  {
+    "query": "run a recruiter style critic on my portfolio copy and score it",
+    "should_trigger": true,
+    "skill": "writing"
+  },
+  {
+    "query": "review my cv like a recruiter, are the services misleading",
+    "should_trigger": true,
+    "skill": "writing"
+  },
+  {
+    "query": "update the CV experience text in the decap files from my LinkedIn",
+    "should_trigger": false,
+    "skill": "writing"
+  },
+  {
+    "query": "images for the post: a diagram and screenshots of the portal transition",
+    "should_trigger": true,
+    "skill": "blog"
+  },
+  {
+    "query": "code block from the repo for the post, extract it at the sha with alt text",
+    "should_trigger": true,
+    "skill": "blog"
+  },
+  {
+    "query": "write the outline for the next blog post in the series",
+    "should_trigger": true,
+    "skill": "blog"
+  },
+  {
+    "query": "outline the next post from the post list and run the critic before any prose",
+    "should_trigger": true,
+    "skill": "blog"
+  },
+  {
+    "query": "write the article for the CV series part 4",
+    "should_trigger": true,
+    "skill": "blog"
+  },
+  {
+    "query": "make the cover image and alt text for the post",
+    "should_trigger": true,
+    "skill": "blog"
+  },
+  {
+    "query": "record the full lifecycle flow and cut a launch film with captions on the beat",
+    "should_trigger": true,
+    "skill": "motion-video"
+  },
+  {
+    "query": "the caption at 0:42 goes too fast in the demo video, fix the film",
+    "should_trigger": true,
+    "skill": "motion-video"
+  },
+  {
+    "query": "record a playwright test that clicks through the checkout flow",
+    "should_trigger": false,
+    "skill": "motion-video"
+  },
+  {
+    "query": "load context and tell me where we left off on the agents tab",
+    "should_trigger": true,
+    "skill": "session-start"
+  },
+  {
+    "query": "resume the last session, we got cut off",
+    "should_trigger": true,
+    "skill": "session-start"
+  },
+  {
+    "query": "update the handoff before we compact",
+    "should_trigger": false,
+    "skill": "session-start"
+  },
+  {
+    "query": "write the time entry for today, how many hours did we spend",
+    "should_trigger": true,
+    "skill": "session-start"
+  },
+  {
+    "query": "log the time for this ticket and wrap up the session",
+    "should_trigger": true,
+    "skill": "session-start"
+  },
+  {
+    "query": "status update, where are we on the tickets",
+    "should_trigger": false,
+    "skill": "session-start"
+  },
+  {
+    "query": "where are we on the tickets, what's left",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "give me the list of what is still open and how far along the batch is",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "write the time entry for today",
+    "should_trigger": false,
+    "skill": "orchestration"
+  },
+  {
+    "query": "I committed to staging by mistake, move it to the feature branch",
+    "should_trigger": true,
+    "skill": "ship"
+  },
+  {
+    "query": "commit this fix and open the MR for it",
+    "should_trigger": true,
+    "skill": "ship"
+  },
+  {
+    "query": "run the pre-deploy gates on the tree before the release tag",
+    "should_trigger": true,
+    "skill": "ship"
+  },
+  {
+    "query": "draft the email to the client about the delay and make it sound like me",
+    "should_trigger": true,
+    "skill": "writing"
+  },
+  {
+    "query": "this doc sounds AI, humanize it",
+    "should_trigger": true,
+    "skill": "writing"
+  },
+  {
+    "query": "commit this change with a message",
+    "should_trigger": false,
+    "skill": "writing"
+  },
+  {
+    "query": "run the pre deploy protocol before we push",
+    "should_trigger": true,
+    "skill": "ship"
+  },
+  {
+    "query": "is it ready to push, run all the gates and make sure CI will pass",
+    "should_trigger": true,
+    "skill": "ship"
+  },
+  {
+    "query": "tag the release and write the release notes",
+    "should_trigger": true,
+    "skill": "ship"
+  },
+  {
+    "query": "staging looks good, bump and publish a new tag to prod",
+    "should_trigger": true,
+    "skill": "ship"
+  },
+  {
+    "query": "why didn't prod deploy after I pushed master",
+    "should_trigger": true,
+    "skill": "ship"
+  },
+  {
+    "query": "run all the gates and make sure CI will pass",
+    "should_trigger": true,
+    "skill": "ship"
+  },
+  {
+    "query": "research how other games handle turn based combat before we spec it",
+    "should_trigger": true,
+    "skill": "research"
+  },
+  {
+    "query": "look it up, don't guess which library is the latest",
+    "should_trigger": true,
+    "skill": "research"
+  },
+  {
+    "query": "summarize this one youtube video about tilesets",
+    "should_trigger": true,
+    "skill": "research"
+  },
+  {
+    "query": "the pod runs the old image after the build, check argocd image updater",
+    "should_trigger": true,
+    "skill": "infra-gitops"
+  },
+  {
+    "query": "the external secret from openbao is missing the env var on staging",
+    "should_trigger": true,
+    "skill": "infra-gitops"
+  },
+  {
+    "query": "build and tag shop-api for a production release",
+    "should_trigger": false,
+    "skill": "infra-gitops"
+  },
+  {
+    "query": "track time on this ticket, start the clock",
+    "should_trigger": true,
+    "skill": "session-start"
+  },
+  {
+    "query": "the hook keeps refusing my edit saying no approved spec, sort it out and continue",
+    "should_trigger": false,
+    "skill": "writing"
+  },
+  {
+    "query": "give me a standup on where the batch is",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "work is about to stop, write the full report for the batch with how to QA and your questions for me",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "write the PR description for this branch with the QA steps in his voice",
+    "should_trigger": false,
+    "skill": "orchestration"
+  },
+  {
+    "query": "while the wave runs, how can I watch the players' code change live? tell me the steps",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "run the migrations on the local dev db and check the dev server page for the ticket",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "what does the vs code source control panel show for a multi root workspace?",
+    "should_trigger": false,
+    "skill": "orchestration"
+  },
+  {
+    "query": "next ticket, and remember to just tell me how to start the dev server, don't run dev servers yourself",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "run the local seeds and data migrations then dispatch the builder for the invite fix",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "how do I free port 4000 on linux, something else is listening on it",
+    "should_trigger": false,
+    "skill": "orchestration"
+  },
+  {
+    "query": "stop creating games and re-importing the art style on my dev server, brief the players to reuse the ones we have",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "control the report of the tile picker row, it never ran the ui skill on the screen",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "what does the ui skill check for accessibility",
+    "should_trigger": false,
+    "skill": "orchestration"
+  },
+  {
+    "query": "the game drops to 15 fps when I turn on the view range, it used to hit 120fps",
+    "should_trigger": true,
+    "skill": "performance-expert"
+  },
+  {
+    "query": "we have memory leaks, the editor gets worse every time I open the app",
+    "should_trigger": true,
+    "skill": "performance-expert"
+  },
+  {
+    "query": "maps take forever to load, it's specially bad going from one map to another",
+    "should_trigger": true,
+    "skill": "performance-expert"
+  },
+  {
+    "query": "do a deeper performance audit of the editor and play mode before we change anything",
+    "should_trigger": true,
+    "skill": "performance-expert"
+  },
+  {
+    "query": "fix all the badly optimized code and ensure the thing is blazingly fast",
+    "should_trigger": true,
+    "skill": "performance-expert"
+  },
+  {
+    "query": "the dashboard table stutters when I scroll through 5000 rows",
+    "should_trigger": true,
+    "skill": "performance-expert"
+  },
+  {
+    "query": "the settings page is re-rendering way more than it should on every keystroke",
+    "should_trigger": true,
+    "skill": "performance-expert"
+  },
+  {
+    "query": "use the performance expert on the canvas draw, it's a performance atrocity",
+    "should_trigger": true,
+    "skill": "performance-expert"
+  },
+  {
+    "query": "the heap grows after every page navigation in the admin app, find what holds it",
+    "should_trigger": true,
+    "skill": "performance-expert"
+  },
+  {
+    "query": "the frame rate tanks when 200 units are on screen in the battle view",
+    "should_trigger": true,
+    "skill": "performance-expert"
+  },
+  {
+    "query": "review the diff in lib/shop/orders.ex for n+1 queries",
+    "should_trigger": false,
+    "skill": "performance-expert"
+  },
+  {
+    "query": "the save button on the settings page does nothing when clicked",
+    "should_trigger": false,
+    "skill": "performance-expert"
+  },
+  {
+    "query": "write the quarterly performance summary for the team newsletter",
+    "should_trigger": false,
+    "skill": "performance-expert"
+  },
+  {
+    "query": "add a test that the price cache returns the stored value",
+    "should_trigger": false,
+    "skill": "performance-expert"
+  },
+  {
+    "query": "let's get the runbook fixed, format like a PR with setup and QA steps per ticket",
+    "should_trigger": true,
+    "skill": "writing"
+  },
+  {
+    "query": "write the runbook for the tickets ready for review, setup and steps for each",
+    "should_trigger": true,
+    "skill": "writing"
+  },
+  {
+    "query": "run the qa runbook steps in the browser and tell me what fails",
+    "should_trigger": false,
+    "skill": "writing"
+  },
+  {
+    "query": "fix this bug: the sprites differ between two places, think about which data is static and which is dynamic before you touch anything",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "new ticket: the same records repeat in every place, break the problem down to its basic issues before you write the spec",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "in a relational schema, what data is usually static and what is dynamic? just explain it",
+    "should_trigger": false,
+    "skill": "orchestration"
+  },
+  {
+    "query": "Given I want to build a game where one hero shows up in several levels and does different things in each, analyze the following database schema",
+    "should_trigger": true,
+    "skill": "database-architect"
+  },
+  {
+    "query": "database architect: look at these migrations and tell me what's missing for a booking app",
+    "should_trigger": true,
+    "skill": "database-architect"
+  },
+  {
+    "query": "analyze the database schema of the shop app, orders can have several payers and we want refunds",
+    "should_trigger": true,
+    "skill": "database-architect"
+  },
+  {
+    "query": "review the schema, I think we store the same thing in two places",
+    "should_trigger": true,
+    "skill": "database-architect"
+  },
+  {
+    "query": "schema gaps? here's the structure.sql, context is a multiplayer lobby system",
+    "should_trigger": true,
+    "skill": "database-architect"
+  },
+  {
+    "query": "what data should be repeated across maps and what shouldn't, check the tables",
+    "should_trigger": true,
+    "skill": "database-architect"
+  },
+  {
+    "query": "data model issues: units are configured per map right now, is that wrong?",
+    "should_trigger": true,
+    "skill": "database-architect"
+  },
+  {
+    "query": "split this into static and dynamic data and tell me if the tables are right",
+    "should_trigger": true,
+    "skill": "database-architect"
+  },
+  {
+    "query": "analyze this schema before we write the first migration of the new project",
+    "should_trigger": true,
+    "skill": "database-architect"
+  },
+  {
+    "query": "do a database design review for the new invoicing project, here is the ecto schema",
+    "should_trigger": true,
+    "skill": "database-architect"
+  },
+  {
+    "query": "run the backfill migration on staging for the new characters table",
+    "should_trigger": false,
+    "skill": "database-architect"
+  },
+  {
+    "query": "this query takes 4 seconds in the diff, is there an n+1",
+    "should_trigger": false,
+    "skill": "database-architect"
+  },
+  {
+    "query": "where should this function live, give me the component tree for the editor",
+    "should_trigger": false,
+    "skill": "database-architect"
+  },
+  {
+    "query": "the save button writes the wrong value to the db, investigate",
+    "should_trigger": false,
+    "skill": "database-architect"
+  },
+  {
+    "query": "that is not the framework, that was just an instruction, go back and read the last 10 or so prompts.",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "before you fix the sprite thing break it down to the base problem first, what is static and what is dynamic, then small rules, no brute forcing",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "this spec adds way more machinery than I asked for, cut it back to simple small rules and catch the scope creep before it reaches me",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "the dev server is down and the qa ticket needs the app, run it yourself instead of blocking the task",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "you can run dev servers, just never more than one at a time; mark the ticket built once QA passes",
+    "should_trigger": true,
+    "skill": "orchestration"
+  },
+  {
+    "query": "how does vite pick a port when 5173 is taken",
+    "should_trigger": false,
+    "skill": "orchestration"
+  },
+  {
+    "query": "build the demo video per scene, get each scene approved, then merge them into the full film",
+    "skill": "motion-video",
+    "should_trigger": true
+  },
+  {
+    "query": "the critic should check one scene of the demo video at a time instead of the whole render",
+    "skill": "motion-video",
+    "should_trigger": true
+  },
+  {
+    "query": "record a playwright test of the signup flow, one scene per test",
+    "skill": "motion-video",
+    "should_trigger": false
+  }
+]

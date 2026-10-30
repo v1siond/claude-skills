@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>seek page example</title>
+<style>
+  html, body { margin: 0; background: #0b0b0c; overflow: hidden; }
+  #stage { position: relative; width: 1920px; height: 1080px; overflow: hidden; }
+  #world { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
+  .card { position: absolute; background: #f5f5f2; border-radius: 28px; z-index: 2; }
+  .word { position: absolute; color: #0b0b0c; font: 700 96px/1 system-ui, sans-serif; z-index: 3; }
+  #hud { position: absolute; left: 24px; bottom: 16px; color: #888; font: 14px monospace; z-index: 9; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="world"><div class="card" id="card"></div><div class="word" id="word">Game</div></div>
+  <div id="hud"></div>
+</div>
+<script>
+// The contract (references/engine-contract.md): every style below is computed from t alone.
+// No CSS transitions, no timers, no state carried between frames. A clock exists only in preview mode.
+const DURATION = 4
+const RENDER = new URLSearchParams(location.search).has('render')
+
+// Closed-form damped spring step response, 0 to 1, for time since the event.
+function step(tau, w = 14, z = 0.8) {
+  if (tau <= 0) return 0
+  if (z >= 1) { const x = w * tau; return 1 - Math.exp(-x) * (1 + x) }
+  const wd = w * Math.sqrt(1 - z * z)
+  return 1 - Math.exp(-z * w * tau) * (Math.cos(wd * tau) + (z * w / wd) * Math.sin(wd * tau))
+}
+// A value with many targets is the sum of one spring per change.
+function track(v0, events) {
+  return (t) => events.reduce((v, [at, to, from, w, z]) => v + (to - from) * step(t - at, w, z), v0)
+}
+// Seeded PRNG: the same t always draws the same frame.
+function mulberry32(seed) {
+  return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let r = Math.imul(seed ^ seed >>> 15, 1 | seed)
+    r = r + Math.imul(r ^ r >>> 7, 61 | r) ^ r; return ((r ^ r >>> 14) >>> 0) / 4294967296 }
+}
+const JITTER = Array.from({ length: 8 }, mulberry32(7))
+
+const cardW = track(120, [[0.3, 900, 120, 12, 0.85], [2.4, 520, 900, 14, 0.9]])
+const cardH = track(120, [[0.3, 260, 120, 12, 0.85]])
+const wordIn = (t) => step(t - 0.9, 18, 1)
+const zoom = track(0, [[2.0, Math.log(1.25), 0, 6, 1]])
+
+const card = document.getElementById('card')
+const word = document.getElementById('word')
+const world = document.getElementById('world')
+const hud = document.getElementById('hud')
+
+window.seek = (t) => {
+  const w = cardW(t), h = cardH(t), z = Math.exp(zoom(t))
+  world.style.transform = `translate(960px,540px) scale(${z}) translate(-960px,-540px)`
+  card.style.width = `${w}px`; card.style.height = `${h}px`
+  card.style.left = `${960 - w / 2}px`; card.style.top = `${540 - h / 2 + JITTER[0] * 2}px`
+  const e = wordIn(t)
+  word.style.opacity = String(e)
+  word.style.filter = `blur(${(1 - e) * 10}px)`
+  word.style.left = '760px'; word.style.top = `${492 + (1 - e) * 24}px`
+  hud.textContent = RENDER ? '' : `t ${t.toFixed(3)} s`
+}
+
+document.fonts.ready.then(() => { window.seek(0); window.ready = true })
+
+// Preview only: Space plays or pauses, arrows step one frame. The render never runs this.
+if (!RENDER) {
+  let t = 0, playing = true, last = null
+  const loop = (now) => {
+    if (playing && last !== null) t = (t + (now - last) / 1000) % DURATION
+    last = now; window.seek(t); requestAnimationFrame(loop)
+  }
+  requestAnimationFrame(loop)
+  addEventListener('keydown', (ev) => {
+    if (ev.code === 'Space') playing = !playing
+    if (ev.code === 'ArrowRight') t = Math.min(DURATION, t + 1 / 30)
+    if (ev.code === 'ArrowLeft') t = Math.max(0, t - 1 / 30)
+  })
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+{
+ "row": "P24",
+ "title": "CSS page transition: four portals between my 17 CV worlds",
+ "slug": "css-page-transition-portals",
+ "meta_description": "How I swapped a theme dropdown for world cards and four CSS portal effects, timed by a small state machine and picked from a shuffle bag.",
+ "keyword": "css page transition",
+ "keywords": [
+  "css page transition",
+  "portal transition",
+  "page transition animation"
+ ],
+ "intent": "Do",
+ "kind": "animation trick",
+ "audience": "software engineers who build front ends",
+ "promise": "A CSS page transition that covers the screen, swaps the page at the peak and reveals the new one, in four variants (vortex, wormhole, hyperspace, glitch) that never repeat back to back.",
+ "series": {
+  "id": "CV",
+  "part": 3,
+  "hub": "pending:CV hub",
+  "prev": "pending:P23",
+  "next": "pending:P25"
+ },
+ "trends": [
+  "F23"
+ ],
+ "flags": [],
+ "beats": [
+  {
+   "id": "b1",
+   "heading": "The result: one click, a portal, a new world",
+   "claim": "Clicking a world card plays a full screen portal tinted to the destination world, swaps the site at the peak and scrolls to the top.",
+   "evidence": [
+    {
+     "type": "sha",
+     "ref": "4b5d3ba"
+    },
+    {
+     "type": "file",
+     "ref": "$CLAUDE_WORKSPACE/game/changelog-Worlds-portal-transition-2026-06-08.md"
+    }
+   ],
+   "media": [
+    "m1",
+    "m2"
+   ]
+  },
+  {
+   "id": "b2",
+   "heading": "Why the dropdown went",
+   "claim": "Each of the 17 themes is a full alternate version of the site, so a dropdown hid them; the dropdown was removed from all 17 and every world got world cards.",
+   "evidence": [
+    {
+     "type": "sha",
+     "ref": "4b5d3ba"
+    },
+    {
+     "type": "file",
+     "ref": "$CLAUDE_WORKSPACE/game/changelog-Worlds-portal-transition-2026-06-08.md"
+    }
+   ],
+   "media": []
+  },
+  {
+   "id": "b3",
+   "heading": "Cover, swap, reveal: the whole trick in three phases",
+   "claim": "A state machine runs cover for COVER_MS (720 ms), swaps the world, scrolls to 0 and saves the choice while the screen is fully covered, then reveals for REVEAL_MS (620 ms); those two constants are the knobs.",
+   "evidence": [
+    {
+     "type": "sha",
+     "ref": "4b5d3ba"
+    }
+   ],
+   "media": [
+    "m3",
+    "m4"
+   ]
+  },
+  {
+   "id": "b4",
+   "heading": "Why CSS keyframes over canvas",
+   "claim": "GPU composited transforms and opacity stay smooth over a full screen overlay; JS only picks the variant and times the swap.",
+   "evidence": [
+    {
+     "type": "file",
+     "ref": "$CLAUDE_WORKSPACE/game/changelog-Worlds-portal-transition-2026-06-08.md"
+    }
+   ],
+   "media": [
+    "m5"
+   ]
+  },
+  {
+   "id": "b5",
+   "heading": "Four variants, picked from a shuffle bag",
+   "claim": "All four variants play once before any repeats, and the bag boundary never repeats the last one, so successive transitions feel distinct (the code comment's own reason).",
+   "evidence": [
+    {
+     "type": "sha",
+     "ref": "4b5d3ba"
+    },
+    {
+     "type": "file",
+     "ref": "$CLAUDE_WORKSPACE/game/changelog-Worlds-portal-transition-2026-06-08.md"
+    }
+   ],
+   "media": [
+    "m6",
+    "m7"
+   ]
+  },
+  {
+   "id": "b6",
+   "heading": "Reduced motion skips the portal",
+   "claim": "With prefers-reduced-motion the world swaps instantly with no portal, and a CSS rule hides the overlay as a backstop.",
+   "evidence": [
+    {
+     "type": "sha",
+     "ref": "4b5d3ba"
+    }
+   ],
+   "media": [
+    "m8"
+   ]
+  },
+  {
+   "id": "b7",
+   "heading": "What changed since June",
+   "claim": "The cards later moved into a picker modal and the reduced motion check became one shared hook; the bag and the three phases are the same at HEAD.",
+   "evidence": [
+    {
+     "type": "sha",
+     "ref": "31d5e5c"
+    },
+    {
+     "type": "sha",
+     "ref": "e67ab0f"
+    },
+    {
+     "type": "sha",
+     "ref": "57a00dc"
+    }
+   ],
+   "media": []
+  }
+ ],
+ "media": [
+  {
+   "id": "m1",
+   "beat": "b1",
+   "kind": "image",
+   "cover": true,
+   "shows": "the four portal effects at their peak side by side, 1200x630",
+   "route": "frames of m7 at each portal peak (web.sh frames, picked by eye from web.sh strip), montage 2x2 at 600x315 each into 1200x630, then web.sh webp",
+   "file": "media/portal-variants-cover.webp",
+   "format": "webp",
+   "alt": "Four full screen portal effects at their peak: a spinning vortex, wormhole rings, hyperspace streaks and a glitch grid",
+   "caption": "The four portals at their peak, each tinted to the world you are entering.",
+   "licence": "his own screens"
+  },
+  {
+   "id": "m2",
+   "beat": "b1",
+   "kind": "clip",
+   "shows": "the launcher opened, a card clicked, the portal covering the screen, the new world appearing at the top",
+   "route": "clip",
+   "source": "http://localhost:4100/ steps media/src/steps-portal.json",
+   "file": "media/portal-click.mp4",
+   "format": "mp4",
+   "alt": "A click on a world card plays a portal and lands on the new world",
+   "caption": "One click: cover, swap at the peak, reveal. Recorded on the live CV.",
+   "licence": "his own screens",
+   "seen": "4.4 s at 1280x720: the open picker with live previews, the picker closes on the current world, the glitch portal (cyan and purple grid, 'Entering Dark Fantasy') covers the screen, Dark Fantasy appears at the top. The Next.js dev indicator shows bottom left: retake with --hide nextjs-portal."
+  },
+  {
+   "id": "m3",
+   "beat": "b3",
+   "kind": "diagram",
+   "shows": "idle, cover 720 ms, swap (setThemeById, scrollTo 0, persist), reveal 620 ms, idle, as a timeline",
+   "route": "svg",
+   "file": "media/cover-swap-reveal.svg",
+   "format": "svg",
+   "alt": "Timeline of the transition: cover for 720 ms, swap at the peak, reveal for 620 ms",
+   "caption": "The swap happens while nothing of the old page is visible.",
+   "licence": "his own",
+   "seen": "1600x480 timeline: idle, cover 720 ms portal grows, a blue swap bar labelled setThemeById, scrollTo(0, 0), saved, reveal 620 ms portal fades, idle."
+  },
+  {
+   "id": "m4",
+   "beat": "b3",
+   "kind": "code",
+   "shows": "the two timers that run cover, swap and reveal",
+   "route": "code",
+   "source": "/home/you/projects/game@4b5d3ba:src/themes/WorldTransitionContext.tsx#L75-L86",
+   "caption": "WorldTransitionContext.tsx at 4b5d3ba"
+  },
+  {
+   "id": "m5",
+   "beat": "b4",
+   "kind": "code",
+   "shows": "the vortex variant keyframes keyed by data-variant and data-phase",
+   "route": "code",
+   "source": "/home/you/projects/game@4b5d3ba:src/styles/globals.css#L329-L349",
+   "caption": "globals.css at 4b5d3ba"
+  },
+  {
+   "id": "m6",
+   "beat": "b5",
+   "kind": "code",
+   "shows": "the shuffle bag refill with the no repeat swap at the boundary",
+   "route": "code",
+   "source": "/home/you/projects/game@4b5d3ba:src/themes/WorldTransitionContext.tsx#L55-L69",
+   "caption": "WorldTransitionContext.tsx at 4b5d3ba"
+  },
+  {
+   "id": "m7",
+   "beat": "b5",
+   "kind": "clip",
+   "shows": "four clicks in a row playing four different portals",
+   "route": "clip",
+   "source": "http://localhost:4100/ steps media/src/steps-four.json",
+   "file": "media/portal-four-in-a-row.mp4",
+   "format": "mp4",
+   "alt": "Four world changes in a row, each with a different portal effect",
+   "caption": "Four clicks, four different portals, no repeat.",
+   "licence": "his own screens"
+  },
+  {
+   "id": "m8",
+   "beat": "b6",
+   "kind": "code",
+   "shows": "the reduced motion guard that swaps instantly",
+   "route": "code",
+   "source": "/home/you/projects/game@4b5d3ba:src/themes/WorldTransitionContext.tsx#L48-L53",
+   "caption": "WorldTransitionContext.tsx at 4b5d3ba"
+  }
+ ],
+ "links": {
+  "internal": [
+   "pending:CV hub",
+   "pending:P23",
+   "pending:P25"
+  ],
+  "external": []
+ }
+}

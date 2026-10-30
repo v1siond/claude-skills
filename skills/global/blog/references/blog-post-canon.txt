@@ -1,0 +1,7 @@
+outline before prose	pass the critic before any prose
+draft before media	draft passes before media is rendered
+media is made	Media is made, never a placeholder
+code is extracted	Code is extracted, never typed
+critic defaults to reject	[Dd]efault.{0,20}reject
+evidence per claim	sha, a session id plus timestamp
+nothing published	Nothing published

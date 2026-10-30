@@ -1,0 +1,14 @@
+Fonts for film titles and captions when the brand has none. Both are under the SIL Open Font License 1.1
+(OFL-*.txt beside them), which allows bundling and redistribution with the licence kept next to the files.
+Fetched 2026-10-23 from the upstream project repositories:
+
+Antonio.ttf             https://raw.githubusercontent.com/googlefonts/antonioFont/HEAD/Fonts/VF/Antonio%5Bwght%5D.ttf
+OFL-Antonio.txt         https://raw.githubusercontent.com/googlefonts/antonioFont/HEAD/OFL.txt
+EBGaramond.ttf          https://raw.githubusercontent.com/octaviopardo/EBGaramond12/HEAD/fonts/variable/EBGaramond%5Bwght%5D.ttf
+EBGaramond-Italic.ttf   https://raw.githubusercontent.com/octaviopardo/EBGaramond12/HEAD/fonts/variable/EBGaramond-Italic%5Bwght%5D.ttf
+OFL-EBGaramond.txt      https://raw.githubusercontent.com/octaviopardo/EBGaramond12/HEAD/OFL.txt
+
+sha256
+9e95a2258ecdf3e45c72c5bbea1c4cd350e8f7bebc87c9dba53b29b1890b8903  Antonio.ttf
+b76b365299331ddff5f8077648ef3b6fbb67f3bd15bebb955a42c6e57904aed0  EBGaramond-Italic.ttf
+684fcc0db2239b43497341d596d68422ea60ef7522cf2e857071ad84e4ade2a4  EBGaramond.ttf

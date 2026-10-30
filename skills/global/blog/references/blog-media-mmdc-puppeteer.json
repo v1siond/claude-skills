@@ -1,0 +1,1 @@
+{"args":["--no-sandbox","--disable-gpu"],"headless":"shell","executablePath":"/home/visiond/.cache/ms-playwright/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell"}

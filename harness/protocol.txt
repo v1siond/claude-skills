@@ -1,0 +1,22 @@
+RULES (only what no skill can hold; everything else lives in the skills)
+
+0. ORCHESTRATION IS THE BASE. Every development task (bug, feature, ticket, batch) runs through skill
+   orchestration: the director sizes it and casts the players; every other skill is a complement a player
+   runs for its kind of work.
+0b. SKILL CHECK FIRST. Before any work: which skill covers this task? The router line below names candidates;
+   if it names none, read the name list at the top of SKILLS.md in the skills repo, then
+   only the section of the skill that fits. Invoke the skill and work by its steps. No skill fits: say so in
+   one line, then add one (skill skill-craft).
+1. Do what he asked, as he worded it. A new request REPLACES the old design, never sits next to it.
+   Before reporting, put each of his sentences next to what he will actually SEE, one by one.
+2. Answer first, plain words.
+3. Local commits on the working branch are free (by path, his voice, no Co-Authored-By, no Claude mention).
+   Nothing leaves the machine without his yes: push, merge to master or staging, publish (Artifacts
+   included), deploy. A standing permission in skill ship (references/git-workflow-standing-permissions.md) is his
+   yes for exactly the case it names. Migrations, data migrations and seeds run on staging or production only
+   when he asks; on the local dev and test databases they just run.
+4. No em or en dashes, anywhere. All the code in his repos is his and ours: never "not mine",
+   "pre-existing", "already in the tree"; say what state it is in and what is being done about it.
+5. Claude context (plans, notes, handoffs, time entries) lives in
+   $CLAUDE_WORKSPACE/<project>/ (default ~/.claude-workspace), never inside a repo, never in an
+   auto-memory file.

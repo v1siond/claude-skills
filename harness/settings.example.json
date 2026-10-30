@@ -1,0 +1,39 @@
+{
+  "env": {
+    "CLAUDE_CODE_DISABLE_TERMINAL_TITLE": "<value>",
+    "CLAUDE_CODE_PLUGIN_DIRS": "<path to ~/.claude/mods/agents-live>:<path to ~/.claude/mods/token-guard>",
+    "CLAUDE_CODE_AUTO_COMPACT_WINDOW": "<value>",
+    "CLAUDE_WORKSPACE": "<folder for plans, notes and handoffs, outside every repo; default ~/.claude-workspace>"
+  },
+  "permissions": {
+    "allow": ["Read", "Glob", "Grep"]
+  },
+  "hooks": {
+    "SessionStart": [
+      { "matcher": "startup|resume|clear", "hooks": [{ "type": "command", "command": "cat $HOME/.claude/protocol.txt" }] },
+      { "matcher": "compact", "hooks": [{ "type": "command", "command": "python3 $HOME/.claude/hooks/post-compact.py" }] }
+    ],
+    "UserPromptSubmit": [
+      { "hooks": [{ "type": "command", "command": "cat $HOME/.claude/protocol.txt" }] },
+      { "hooks": [{ "type": "command", "command": "$HOME/.claude/hooks/skill-router.py", "timeout": 5 }] }
+    ],
+    "PreToolUse": [
+      { "matcher": "*", "hooks": [{ "type": "command", "command": "$HOME/.claude/usage-guard.sh", "timeout": 5 }] },
+      { "matcher": "Bash", "hooks": [{ "type": "command", "command": "<path to this repo>/skills/global/ship/scripts/push-gate.sh", "timeout": 20 }] }
+    ],
+    "Stop": [
+      { "hooks": [{ "type": "command", "command": "$HOME/.claude/stop-report-format.sh", "timeout": 60 }] }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "$HOME/.claude/usage-statusline.sh",
+    "refreshInterval": 30
+  },
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true,
+    "code-review@claude-plugins-official": true
+  },
+  "effortLevel": "medium"
+}

@@ -1,0 +1,8 @@
+# label TAB regex; lint-skills.py fails when a regex no longer matches SKILL.md or references/*.md
+seen red first	(?i)seen red
+mode default	`default`
+mode add browser tests	`add browser tests`
+browser tests only on his ask	(?i)only on his ask
+mode read first	(?i)test mode is read first
+backend TDD in every batch	(?i)backend logic is test driven in every batch
+letter of the law	Violating the letter of a law is violating the law

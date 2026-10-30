@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# Project skills live in a private repo of their own at skills/specific (never public)
+skills/specific/
+# The catalog lists the private skills too, so it is generated locally only
+skills/SKILLS.md

@@ -1,0 +1,1 @@
+{ "name": "agents-live", "version": "0.1.0", "description": "Live pane with what each background agent is saying and running right now", "types": "./types/index.d.ts" }
